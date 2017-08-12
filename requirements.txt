@@ -1,4 +1,7 @@
 backports.functools-lru-cache==1.4
+certifi==2017.7.27.1
+chardet==3.0.4
+idna==2.5
 inflect==0.2.5
 irc==16.0
 jaraco.classes==1.4.1
@@ -11,5 +14,7 @@ jaraco.text==1.9.2
 more-itertools==3.2.0
 pkg-resources==0.0.0
 pytz==2017.2
+requests==2.18.3
 six==1.10.0
 tempora==1.8
+urllib3==1.22
