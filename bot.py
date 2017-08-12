@@ -35,6 +35,8 @@ class DnDBot(ib.SingleServerIRCBot):
 		log(e.source.nick,text)
 		if text=="!aboutme":
 			self.say(c,e,"I am ImANoob's DnD IRC bot, rewritten in Python because fuck Java and fuck not having good uptime.")
+		if text=="!src":
+			self.say(c,e,"The source code for DnDBot is at https://github.com/MineRobber9000/DnDBot")
 		if text.startswith("!roll "):
 			parts = text.split()
 			parts.pop(0)
