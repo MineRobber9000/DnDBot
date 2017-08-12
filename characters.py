@@ -6,7 +6,8 @@ class Character:
 	def __init__(self,row):
 		self.name = row[0]
 		self.player = row[1]
-		self.classdata = row[2:3]
+		self.classname = row[2]
+		self.classhp = row[3]
 		self.race = row[4]
 		self.age = row[5]
 		self.xp = row[6]
