@@ -1,5 +1,5 @@
 import irc.bot as ib
-import time,random
+import time,random,os.path
 
 def getPassword():
 	with open("password.txt") as f:
@@ -47,6 +47,8 @@ class DnDBot(ib.SingleServerIRCBot):
 				except ValueError as e:
 					pass
 			self.say(c,e,"You rolled a {!s}. [{}]".format(sum(results),"+".join([str(r) for r in results])))
+		if text.startswith("!character"):
+			print("NYI")
 
 if __name__=="__main__":
 	bot = DnDBot(["#dnd"],"DnDBot","irc.badnik.zone")
